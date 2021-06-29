@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>kermite.org</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .container {
+      font-family: "Noto Sans JP";
+      max-width: 750px;
+      padding: 10px 20px 20px;
+    }
+
+    .intro-text {
+      margin-bottom: 10px;
+      margin-left: 2px;
+    }
+
+    .section>h3 {
+      color: navy;
+      margin-bottom: 2px;
+    }
+
+    .section>p {
+      margin-left: 5px;
+    }
+
+    .section>h3::before {
+      content: '■';
+    }
+
+    .section+.section {
+      margin-top: 15px;
+    }
+
+    .section-screenshot>.list-images {
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+    }
+
+    li::before {
+      content: '・';
+    }
+
+    a>img {
+      height: 100px;
+    }
+
+    .link-github {
+      display: block;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .copyright {
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PG24HYNLSY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PG24HYNLSY');
+  </script>
+</head>
+
+<body>
+  <div class='container'>
+    <h1>kermite.org</h1>
+    <p class='intro-text'>Kermiteの開発を行っています。</p>
+    <div class='section'>
+      <h3>Kermiteとは?</h3>
+      <p>
+        自作キーボード用のソフトウェアです。GUIでの配列設定を前提としてファームウェアが設計されています。
+        専用のユーティリティソフトでキーマッピングを書き込んで使用します。
+      </p>
+      <p>
+        ファームウェア/ユーティリティソフトともに外部のソフトウェアになるべく依存しない作りにしています。
+        レイヤロジックやキーコードのマッピング処理なども、既存のものに頼らず独自に実装を行いました。
+      </p>
+      <p>
+        ファームウェアは自作キーボードでよく使われているProMicroに対応しています。また、最近発売されたProMicro
+        RP2040への移行対応を行っています。
+      </p>
+    </div>
+
+    <div class='section'>
+      <h3>特徴</h3>
+      <ul>
+        <li>ユーティリティソフトでキーマッピングを変更できます。</li>
+        <li>現在のレイヤに応じて表示が切り替わる、リアルタイムキーマッピング表示機能があります。</li>
+        <li>背景を透過してデスクトップマスコットのように表示するウィジェット機能があります。</li>
+        <li>キーを追加したり、キーの位置を変更できるレイアウトエディタを内蔵しています。</li>
+        <li>GUI上での操作でMCUにファームウェアを書き込めます。</li>
+        <li>ファームウェアはC言語によるシンプルな実装で、カスタマイズが容易です。</li>
+      </ul>
+    </div>
+
+    <div class='section'>
+      <h3>動作環境</h3>
+      <ul>
+        <li>Windows 10</li>
+        <li>MacOS Catalina</li>
+      </ul>
+    </div>
+
+    <div class='section section-screenshot'>
+      <h3>スクリーンショット</h3>
+
+      <div class='list-images'>
+
+        <a href="https://i.gyazo.com/dd06a2d9e1c98815cd69394911a5a29b.png">
+          <img src="https://i.gyazo.com/dd06a2d9e1c98815cd69394911a5a29b.png" />
+        </a>
+
+        <a href="https://i.gyazo.com/d99fe23b2a6549330fdb7100853b5dc9.png">
+          <img src="https://i.gyazo.com/d99fe23b2a6549330fdb7100853b5dc9.png" />
+        </a>
+
+        <!-- Widget表示 -->
+        <!-- <a href="https://i.gyazo.com/6e266e99462661d12113bfcb634e431d.png">
+        <img src="https://i.gyazo.com/6e266e99462661d12113bfcb634e431d.png" width="150px" />
+      </a> -->
+
+        <a href="https://i.gyazo.com/e10ff1fe177c025d0b7794901992262e.png">
+          <img src="https://i.gyazo.com/e10ff1fe177c025d0b7794901992262e.png" />
+        </a>
+
+      </div>
+    </div>
+
+    <div class='section'>
+      <h3>入手先</h3>
+
+      <p>githubで開発を行っています。</p>
+      <p>現在開発中のため実行ファイルのリリースがまだありません。</p>
+      <p>ビルド/実行にはnode.jsの環境構築が必要です。</p>
+
+      <a href="https://github.com/kermite-org/Kermite" class='link-github'>githubのリポジトリ</a>
+    </div>
+
+    <div class='section'>
+      <h3>連絡先</h3>
+      <p>不具合やご要望などは、yahiro1200(あっと)gmail(どっと)com にご相談ください。</p>
+    </div>
+
+    <div class='section'>
+      <h3>その他</h3>
+    </div>
+    <div class='copyright'>(c)2021 yahiro, All rights reserved.</div>
+  </div>
+</body>
+
+</html>
