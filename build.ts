@@ -1,34 +1,11 @@
 import fs from 'fs';
-import readline from 'readline';
 import { build, cliopts } from 'estrella';
 import open from 'open';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const servor = require('servor');
 
-const [opts] = cliopts.parse(
-  ['x-mockview', 'start mockview'],
-  ['x-web', 'start web'],
-);
-const reqMockView = opts['x-mockview'];
-const reqWeb = opts['x-web'];
-
-type IKeyPressEvent = {
-  sequence: string;
-  name: string;
-  ctrl: boolean;
-  shift: boolean;
-  meta: boolean;
-};
-
-async function readKey(): Promise<IKeyPressEvent> {
-  readline.emitKeypressEvents(process.stdin);
-  process.stdin.setRawMode(true);
-  const res = await new Promise<IKeyPressEvent>((resolve) => {
-    process.stdin.once('keypress', (_, key: any) => resolve(key));
-  });
-  process.stdin.setRawMode(false);
-  return res;
-}
+const [opts] = cliopts.parse(['start-web', 'debug web']);
+const reqStartWeb = opts['start-web'];
 
 function launchDebugServer(distDir: string) {
   servor({
@@ -40,13 +17,6 @@ function launchDebugServer(distDir: string) {
   });
   open('http://localhost:3000');
   console.log('server listening on http://localhost:3000');
-
-  (async () => {
-    const key = await readKey();
-    if (key.sequence === '\x1B' || key.sequence === '\x03') {
-      process.exit();
-    }
-  })();
 }
 
 function startWatchPage(folderName: string) {
@@ -74,10 +44,7 @@ function startWatchPage(folderName: string) {
 }
 
 function entry() {
-  if (reqMockView) {
-    startWatchPage('ui-mock-view');
-  }
-  if (reqWeb) {
+  if (reqStartWeb) {
     startWatchPage('web');
   }
 }

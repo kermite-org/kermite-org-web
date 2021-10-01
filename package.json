@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "ts-node build.ts -x-web"
+    "start": "ts-node build.ts -start-web"
   },
   "dependencies": {
     "@types/node": "^16.10.2",
