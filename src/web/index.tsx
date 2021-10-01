@@ -1,4 +1,5 @@
 import { applyGlobalStyle, css, jsx, render } from 'qx';
+import { IndexPage } from '~/web/IndexPage';
 
 applyGlobalStyle(css`
   * {
@@ -23,16 +24,8 @@ applyGlobalStyle(css`
   }
 `);
 
-const rootStyle = css`
-  padding: 10px;
-  color: red;
-`;
-
 function start() {
-  render(
-    () => <div css={rootStyle}>hello</div>,
-    document.getElementById('app'),
-  );
+  render(() => <IndexPage />, document.getElementById('app'));
 }
 
 window.addEventListener('load', start);
