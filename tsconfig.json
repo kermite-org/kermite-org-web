@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "strict": true,
     "lib": ["dom", "esnext"],
     "jsx": "react",
     "jsxFactory": "jsx",
     "skipLibCheck": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "baseUrl": "./src",
     "paths": {
+      "qx": ["./qx"],
+      "qx/*": ["./qx/*"],
       "~/*": ["./*"]
     }
   },
