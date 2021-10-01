@@ -1,4 +1,4 @@
-import { applyGlobalStyle, css, jsx, render } from '~/qx';
+import { applyGlobalStyle, css, jsx, render } from 'qx';
 
 applyGlobalStyle(css`
   * {
