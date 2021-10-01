@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/kermite-org/web.git",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html -p 3000"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
 }
