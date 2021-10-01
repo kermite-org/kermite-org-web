@@ -1,5 +1,5 @@
 import { css, FC, jsx } from 'qx';
-import { mqLarge } from '~/web/utils/styleHelpers';
+import { mqLarge } from '~/web/utils';
 
 export const MainVisualSection: FC = () => (
   <div css={style}>

@@ -1,8 +1,9 @@
 import { FC, jsx } from 'qx';
-import { MainVisualSection } from '~/web/sections';
+import { MainVisualSection, NavigationBar } from '~/web/sections';
 
 export const IndexPage: FC = () => (
   <div>
+    <NavigationBar />
     <MainVisualSection />
   </div>
 );

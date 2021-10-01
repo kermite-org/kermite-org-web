@@ -19,8 +19,12 @@ applyGlobalStyle(css`
   }
 
   body {
-    overflow: hidden;
     background: #fff;
+  }
+
+  ul,
+  li {
+    list-style: none;
   }
 `);
 
