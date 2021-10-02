@@ -11,27 +11,27 @@ type FeatureItem = {
 const featureItems: FeatureItem[] = [
   {
     title: 'MCU Boards Supported',
-    imageUrl: 'https://i.gyazo.com/00257ad39eff1b34e010ea461e4d72c1.png',
+    imageUrl: 'https://i.gyazo.com/9200650e13090ebb8a5cb33ea85cfd99.png',
     text: 'AVR and RP2040 boards supported.\nYou can easily design your keyboard with them.',
   },
   {
     title: 'Easy Firmware Configuration',
-    imageUrl: 'https://i.gyazo.com/00257ad39eff1b34e010ea461e4d72c1.png',
-    text: 'Standard firmware covers typical keyboard design. It can be configured without code.',
+    imageUrl: 'https://i.gyazo.com/0e437b6fe6a2850a99f653ca226accc4.png',
+    text: 'Standard firmware covers typical keyboard design. It can be setup without code.',
   },
   {
     title: 'Components Supported',
-    imageUrl: 'https://i.gyazo.com/00257ad39eff1b34e010ea461e4d72c1.png',
+    imageUrl: 'https://i.gyazo.com/8ba330e98c4c0f9551c515fccb4c4711.png',
     text: 'Kermite supports commonly used keyboard components like RGBLED, OLED, Rotary Encoders, Optical Sensors, Joystick, ...etc',
   },
   {
     title: 'Intuitive Layout Editor',
-    imageUrl: 'https://i.gyazo.com/00257ad39eff1b34e010ea461e4d72c1.png',
+    imageUrl: 'https://gyazo.com/9501d747d2dcceff49a577be4c46c6ce.png',
     text: 'GUI layout editor is integrated.',
   },
   {
     title: 'Share Profiles',
-    imageUrl: 'https://i.gyazo.com/00257ad39eff1b34e010ea461e4d72c1.png',
+    imageUrl: 'https://i.gyazo.com/e1f465f7d7b75f89459250ef4794013e.png',
     text: 'Kermite Server enables you to find keymapping by other users. You can also publish your profile to others.',
   },
 ];
