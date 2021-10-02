@@ -60,7 +60,7 @@ const style = css`
       font-size: 18px;
       line-height: 1.5em;
 
-      h3 {
+      > h3 {
         font-size: 28px;
       }
     }
