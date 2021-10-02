@@ -4,5 +4,5 @@ export const colors = {
   topBar: '#7ae',
   mainText: '#128',
   sectionBg: '#fff',
-  sectionBgAlt: '#eef',
+  sectionBgAlt: '#f3f5f7',
 };

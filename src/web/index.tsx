@@ -1,5 +1,6 @@
 import { applyGlobalStyle, css, jsx, render } from 'qx';
 import { IndexPage } from '~/web/IndexPage';
+import { colors } from '~/web/utils';
 
 applyGlobalStyle(css`
   * {
@@ -16,6 +17,7 @@ applyGlobalStyle(css`
 
   #app {
     font-family: 'Roboto', sans-serif;
+    color: ${colors.mainText};
   }
 
   body {

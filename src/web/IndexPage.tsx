@@ -7,5 +7,6 @@ export const IndexPage: FC = () => (
     <NavigationBar />
     <MainVisualSection />
     <AboutSection />
+    <AboutSection altBgColor />
   </div>
 );
