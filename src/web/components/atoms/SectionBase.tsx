@@ -4,11 +4,14 @@ import { colors } from '~/web/base';
 type Props = {
   altBgColor?: boolean;
   children: QxChildren;
+  innerCss?: string;
 };
 
-export const SectionBase: FC<Props> = ({ altBgColor, children }) => (
+export const SectionBase: FC<Props> = ({ altBgColor, children, innerCss }) => (
   <div css={style} class={altBgColor && '--alt-bg-color'}>
-    {children}
+    <div class="content" css={innerCss}>
+      {children}
+    </div>
   </div>
 );
 
@@ -17,5 +20,10 @@ const style = css`
 
   &.--alt-bg-color {
     background: ${colors.sectionBgAlt};
+  }
+
+  > .content {
+    margin: 0 auto;
+    max-width: 900px;
   }
 `;
