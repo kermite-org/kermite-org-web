@@ -1,8 +1,12 @@
 import { FC, jsx } from 'qx';
-import { MainVisualSection, NavigationBar } from '~/web/sections';
-import { AboutSection } from '~/web/sections/AboutSection';
-import { FeatureSection } from '~/web/sections/FeatureSection';
-import { IdeaSection } from '~/web/sections/IdeaSection';
+import {
+  MainVisualSection,
+  NavigationBar,
+  AboutSection,
+  AuthorSection,
+  FeatureSection,
+  IdeaSection,
+} from '~/web/sections';
 
 export const IndexPage: FC = () => (
   <div>
@@ -11,5 +15,6 @@ export const IndexPage: FC = () => (
     <AboutSection />
     <IdeaSection altBgColor />
     <FeatureSection />
+    <AuthorSection altBgColor />
   </div>
 );
