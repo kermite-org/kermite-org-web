@@ -2,4 +2,7 @@ export const mqLarge = '@media screen and (min-width: 768px)';
 
 export const colors = {
   topBar: '#7ae',
+  mainText: '#128',
+  sectionBg: '#fff',
+  sectionBgAlt: '#eef',
 };
