@@ -3,7 +3,7 @@ import { SectionBase } from '~/web/components/atoms';
 import { mqLarge, SectionFC } from '~/web/base';
 
 export const AboutSection: SectionFC = ({ altBgColor }) => (
-  <SectionBase innerCss={style} altBgColor={altBgColor}>
+  <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1000}>
     <img
       class="image"
       src="https://i.gyazo.com/dd06a2d9e1c98815cd69394911a5a29b.png"
@@ -36,6 +36,6 @@ const style = css`
 
   > .image {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
   }
 `;
