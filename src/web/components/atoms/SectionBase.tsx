@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const SectionBase: FC<Props> = ({ altBgColor, children }) => (
-  <div css={style} className={altBgColor && '--alt-bg-color'}>
+  <div css={style} class={altBgColor && '--alt-bg-color'}>
     {children}
   </div>
 );
