@@ -1,6 +1,6 @@
 import { applyGlobalStyle, css, jsx, render } from 'qx';
 import { IndexPage } from '~/web/IndexPage';
-import { colors } from '~/web/utils';
+import { colors } from '~/web/base';
 
 applyGlobalStyle(css`
   * {

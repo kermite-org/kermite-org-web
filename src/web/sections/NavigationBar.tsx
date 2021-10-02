@@ -1,5 +1,5 @@
 import { css, FC, jsx } from 'qx';
-import { colors } from '~/web/utils';
+import { colors } from '~/web/base';
 
 export const NavigationBar: FC = () => (
   <div css={style}>

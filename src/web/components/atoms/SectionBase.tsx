@@ -1,5 +1,5 @@
 import { css, FC, jsx, QxChildren } from 'qx';
-import { colors } from '~/web/utils';
+import { colors } from '~/web/base';
 
 type Props = {
   altBgColor?: boolean;
