@@ -1,4 +1,4 @@
-export * from './AboutSection';
+export * from './IntroSection';
 export * from './AuthorSection';
 export * from './FeatureSection';
 export * from './Footer';

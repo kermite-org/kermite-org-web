@@ -2,7 +2,7 @@ import { FC, jsx } from 'qx';
 import {
   MainVisualSection,
   NavigationBar,
-  AboutSection,
+  IntroSection,
   AuthorSection,
   FeatureSection,
   IdeaSection,
@@ -13,7 +13,7 @@ export const IndexPage: FC = () => (
   <div>
     <NavigationBar />
     <MainVisualSection />
-    <AboutSection />
+    <IntroSection />
     <IdeaSection altBgColor />
     <FeatureSection />
     <AuthorSection altBgColor />

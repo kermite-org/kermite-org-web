@@ -2,7 +2,7 @@ import { css, jsx } from 'qx';
 import { SectionBase } from '~/web/components/atoms';
 import { mqLarge, SectionFC } from '~/web/base';
 
-export const AboutSection: SectionFC = ({ altBgColor }) => (
+export const IntroSection: SectionFC = ({ altBgColor }) => (
   <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1000}>
     <img
       class="image"
