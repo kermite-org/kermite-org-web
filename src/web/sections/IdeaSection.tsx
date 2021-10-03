@@ -1,27 +1,37 @@
 import { css, jsx } from 'qx';
 import { Icon, SectionBase } from '~/web/components/atoms';
-import { mqLarge, SectionFC } from '~/web/base';
+import { langs, mqLarge, SectionFC } from '~/web/base';
 
 type IdeaItem = {
   title: string;
-  text: string;
+  textEn: string;
+  textJa: string;
   iconSpec: string;
 };
 
 const ideaItems: IdeaItem[] = [
   {
     title: 'Beginner Friendly',
-    text: 'ソフト単体でファームウェアの書き込みやキーマッピングの設定が簡単にできます。',
+    textEn:
+      'You can flash firmware and config keymapping easily with single app.',
+    textJa:
+      'ソフト単体でファームウェアの書き込みやキーマッピングの設定が簡単にできます。',
     iconSpec: 'fa fa-child',
   },
   {
     title: 'Ready to Use',
-    text: '対応キーボードのファームウェアやキーマッピングのプリセットなどが同梱されており、すぐに使い始めることができます。',
+    textEn:
+      'Since it includes firmware and preset resources for supported keyboards, you can get started it right now.',
+    textJa:
+      '対応キーボードのファームウェアやキーマッピングのプリセットなどが同梱されており、すぐに使い始めることができます。',
     iconSpec: 'fa fa-cube',
   },
   {
     title: 'Open Source',
-    text: 'ファームウェアとユーティリティソフトのソースコードがMITライセンスで提供されています。',
+    textEn:
+      'Full source code for firmware and utility software is provided under MIT license.',
+    textJa:
+      'ファームウェアとユーティリティソフトのソースコードがMITライセンスで提供されています。',
     iconSpec: 'fab fa-github-alt',
   },
 ];
@@ -33,7 +43,8 @@ export const IdeaSection: SectionFC = ({ altBgColor }) => (
         <div key={idx} class="item">
           <h3 class="text">{item.title}</h3>
           <Icon spec={item.iconSpec} />
-          <div>{item.text}</div>
+          <div qxIf={langs.en}>{item.textEn}</div>
+          <div qxIf={langs.ja}>{item.textJa}</div>
         </div>
       ))}
     </div>
