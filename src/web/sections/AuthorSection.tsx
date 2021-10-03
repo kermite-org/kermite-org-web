@@ -98,8 +98,8 @@ const style = css`
   }
 
   ${mqLarge} {
-    > .block {
-      max-width: 500px;
+    > .block > .items-box {
+      flex-direction: row;
     }
   }
 `;
