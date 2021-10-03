@@ -41,10 +41,14 @@ export const IdeaSection: SectionFC = ({ altBgColor }) => (
     <div class="items-box">
       {ideaItems.map((item, idx) => (
         <div key={idx} class="item">
-          <h3 class="text">{item.title}</h3>
+          <h3>{item.title}</h3>
           <Icon spec={item.iconSpec} />
-          <div qxIf={langs.en}>{item.textEn}</div>
-          <div qxIf={langs.ja}>{item.textJa}</div>
+          <div class="text" qxIf={langs.en}>
+            {item.textEn}
+          </div>
+          <div class="text" qxIf={langs.ja}>
+            {item.textJa}
+          </div>
         </div>
       ))}
     </div>
