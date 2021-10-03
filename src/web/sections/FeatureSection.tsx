@@ -63,7 +63,12 @@ const featureItems: FeatureItem[] = [
 ];
 
 export const FeatureSection: SectionFC = ({ altBgColor }) => (
-  <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1100}>
+  <SectionBase
+    id="features"
+    innerCss={style}
+    altBgColor={altBgColor}
+    contentWidth={1100}
+  >
     <div class="items-box">
       {featureItems.map((item, idx) => (
         <div key={idx} class="item">

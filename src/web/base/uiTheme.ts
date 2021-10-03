@@ -6,3 +6,8 @@ export const colors = {
   sectionBg: '#fff',
   sectionBgAlt: '#f3f5f7',
 };
+
+export const zOrders = {
+  topBar: 1,
+  scrollAnchor: 0.1,
+};

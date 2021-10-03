@@ -15,6 +15,10 @@ applyGlobalStyle(css`
     height: 100%;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   #app {
     font-family: 'Roboto', sans-serif;
     color: ${colors.mainText};
@@ -27,6 +31,11 @@ applyGlobalStyle(css`
   ul,
   li {
     list-style: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `);
 

@@ -3,7 +3,12 @@ import { SectionBase } from '~/web/components/atoms';
 import { langs, mqLarge, SectionFC } from '~/web/base';
 
 export const IntroSection: SectionFC = ({ altBgColor }) => (
-  <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1000}>
+  <SectionBase
+    id="concept"
+    innerCss={style}
+    altBgColor={altBgColor}
+    contentWidth={1000}
+  >
     <img
       class="image"
       src="https://i.gyazo.com/dd06a2d9e1c98815cd69394911a5a29b.png"
