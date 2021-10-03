@@ -1,5 +1,6 @@
 import { css, FC, jsx } from 'qx';
 import { colors } from '~/web/base';
+import { LanguageSelectorPart } from '~/web/components/organisms/LanguageSelectorPart';
 
 export const NavigationBar: FC = () => (
   <div css={style}>
@@ -10,6 +11,7 @@ export const NavigationBar: FC = () => (
       <li>download</li>
       <li>contact</li>
     </ul>
+    <LanguageSelectorPart className="lang-sel" />
   </div>
 );
 
@@ -41,5 +43,9 @@ const style = css`
         color: blue;
       }
     }
+  }
+
+  > .lang-sel {
+    margin-right: 20px;
   }
 `;
