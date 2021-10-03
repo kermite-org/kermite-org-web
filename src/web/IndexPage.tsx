@@ -6,6 +6,7 @@ import {
   AuthorSection,
   FeatureSection,
   IdeaSection,
+  Footer,
 } from '~/web/sections';
 
 export const IndexPage: FC = () => (
@@ -16,5 +17,6 @@ export const IndexPage: FC = () => (
     <IdeaSection altBgColor />
     <FeatureSection />
     <AuthorSection altBgColor />
+    <Footer />
   </div>
 );
