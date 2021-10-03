@@ -10,7 +10,7 @@ export const langs = {
   get en(): boolean {
     return uiLanguage === 'English';
   },
-  get jp(): boolean {
+  get ja(): boolean {
     return uiLanguage === 'Japanese';
   },
 };
