@@ -23,6 +23,16 @@ function launchDebugServer(distDir: string) {
   console.log('server listening on http://localhost:3000');
 }
 
+function patchOutputIndexHtmlBundleImport(htmlFilPath: string) {
+  const text = fs.readFileSync(htmlFilPath, { encoding: 'utf-8' });
+  const tt = Date.now().toString();
+  const modText = text.replace(
+    '<script src="./index.js"></script>',
+    `<script src="./index.js?${tt}"></script>`,
+  );
+  fs.writeFileSync(htmlFilPath, modText, { encoding: 'utf-8' });
+}
+
 function startWatchPage(folderName: string) {
   const srcDir = `./src/${folderName}`;
   const distDir = `./dist`;
@@ -52,6 +62,7 @@ function buildPage(folderName: string) {
   const distDir = `./dist`;
   fs.mkdirSync(distDir, { recursive: true });
   fs.copyFileSync(`${srcDir}/index.html`, `${distDir}/index.html`);
+  patchOutputIndexHtmlBundleImport(`${distDir}/index.html`);
 
   build({
     entry: `${srcDir}/index.tsx`,
