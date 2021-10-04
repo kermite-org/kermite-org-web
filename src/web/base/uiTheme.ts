@@ -7,7 +7,7 @@ export const colors = {
   sectionBgAlt: '#f3f5f7',
   headerText: '#F80',
   downloadButton: '#0ae',
-  linkButton: '#CCC',
+  linkButton: '#89b',
   white: '#fff',
   footer: '#666',
 };

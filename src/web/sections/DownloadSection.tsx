@@ -25,12 +25,12 @@ const style = css`
 
   > .button {
     height: 80px;
-    font-size: 36px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     background: ${colors.downloadButton};
     color: ${colors.white};
-    padding: 20px 30px;
+    padding: 0 30px;
     cursor: pointer;
     border-radius: 10px;
 
@@ -41,6 +41,7 @@ const style = css`
 
     > i {
       margin-right: 10px;
+      font-size: 44px;
     }
   }
 `;

@@ -84,8 +84,9 @@ export const FeatureSection: SectionFC = ({ altBgColor }) => (
               {item.textJa}
             </div>
             {item.link && (
-              <div>
+              <div class="links">
                 <a
+                  class="link-button"
                   href={item.link.url}
                   target="_blank"
                   qxIf={langs.en}
@@ -94,6 +95,7 @@ export const FeatureSection: SectionFC = ({ altBgColor }) => (
                   {item.link.titleEn}
                 </a>
                 <a
+                  class="link-button"
                   href={item.link.url}
                   target="_blank"
                   qxIf={langs.ja}
@@ -144,6 +146,22 @@ const style = css`
         > h3 {
           font-size: 32px;
           color: ${colors.headerText};
+        }
+
+        > .links {
+          > .link-button {
+            background: ${colors.linkButton};
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 18px;
+            color: ${colors.white};
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
         }
       }
     }
