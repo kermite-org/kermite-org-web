@@ -1,6 +1,6 @@
 import { css, jsx } from 'qx';
 import { SectionBase } from '~/web/components/atoms';
-import { langs, mqLarge, SectionFC } from '~/web/base';
+import { colors, langs, mqLarge, SectionFC } from '~/web/base';
 
 type FeatureItem = {
   title: string;
@@ -143,6 +143,7 @@ const style = css`
         gap: 20px;
         > h3 {
           font-size: 32px;
+          color: ${colors.headerText};
         }
       }
     }
