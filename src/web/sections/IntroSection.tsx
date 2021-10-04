@@ -16,7 +16,8 @@ export const IntroSection: SectionFC = ({ altBgColor }) => (
     <div class="text">
       <p qxIf={langs.en}>
         Kermite is a new software platform for DIY keyboards. It supports your
-        keyboard setup with many features integrated to the utility software.
+        keyboard setup with a number of features integrated into the utility
+        software.
       </p>
       <p qxIf={langs.ja}>
         Kermiteは、自作キーボードのために開発された、新しいファームウェア/エコシステムです。

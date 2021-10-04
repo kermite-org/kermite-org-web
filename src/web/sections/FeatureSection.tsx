@@ -19,7 +19,7 @@ const featureItems: FeatureItem[] = [
     title: 'MCU Boards Supported',
     imageUrl: 'https://i.gyazo.com/9200650e13090ebb8a5cb33ea85cfd99.png',
     textEn:
-      'AVR and RP2040 boards supported.\nYou can easily design your keyboard with them.',
+      'It is compatible with AVR and RP2040 microcontroller boards.\nYou can easily design your keyboard with them.',
     textJa:
       'AVRとRP2040のマイコンボードに対応しています。これらを使うことで、簡単にハードウェアを構成できます。',
   },
@@ -27,7 +27,7 @@ const featureItems: FeatureItem[] = [
     title: 'Easy Firmware Configuration',
     imageUrl: 'https://i.gyazo.com/0e437b6fe6a2850a99f653ca226accc4.png',
     textEn:
-      'Standard firmware covers typical keyboard design. It can be setup without code.',
+      'Standard firmware is provided to cover all common keyboard configurations. It is configured with GUI and generated firmware can be flashed into MCU on the fly.',
     textJa:
       '一般的なキーボードの構成をカバーできる、標準ファームウェアが提供されます。GUIで設定を行い、生成されたファームウェアをそのまま書き込めます。',
   },
@@ -35,7 +35,7 @@ const featureItems: FeatureItem[] = [
     title: 'Components Supported',
     imageUrl: 'https://i.gyazo.com/8ba330e98c4c0f9551c515fccb4c4711.png',
     textEn:
-      'Kermite supports commonly used keyboard components like RGBLED, OLED, Rotary Encoders, Optical Sensors, Joystick, ...etc',
+      'Kermite supports commonly used keyboard components like RGBLED, OLED, Rotary Encoders, Optical Sensors, ...etc',
     textJa:
       '自作キーボードでよく使われる周辺部品に対応しています。NeoPixel RGBLED, I2C OLED, ロータリーエンコーダなどが利用できます。',
   },
@@ -43,7 +43,7 @@ const featureItems: FeatureItem[] = [
     title: 'Intuitive Layout Editor',
     imageUrl: 'https://gyazo.com/9501d747d2dcceff49a577be4c46c6ce.png',
     textEn:
-      'GUI layout editor is integrated. Not only keys, but keyboard outline can be configured as arbitrary shape.',
+      'It come with layout editor that allows you to edit the key layout directly. Not only the key layout, but also the outline of the keyboard can be set to any desired shape.',
     textJa:
       '直感的にキー配置を編集できる、レイアウトエディタを搭載しています。キーの配置だけでなく、キーボードの外形も任意の形状で設定できます。',
   },
@@ -51,7 +51,7 @@ const featureItems: FeatureItem[] = [
     title: 'Share Profiles',
     imageUrl: 'https://i.gyazo.com/e1f465f7d7b75f89459250ef4794013e.png',
     textEn:
-      'Kermite Server enables you to find keymapping by other users. You can also publish your profile to others.',
+      'Kermite Server provides user-defined keymappings. You can publish your own keymappings and make them available to everyone.',
     textJa:
       'Kermite Serverではユーザが投稿したキーマッピングが提供されています。自分が作ったキーマッピングを公開して、誰でも使えるようにできます。',
     link: {

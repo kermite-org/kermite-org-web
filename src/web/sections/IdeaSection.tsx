@@ -21,7 +21,7 @@ const ideaItems: IdeaItem[] = [
   {
     title: 'Ready to Use',
     textEn:
-      'Since it includes firmware and preset resources for supported keyboards, you can get started it right now.',
+      'Since it includes firmware and preset resources for supported keyboards, you can start using it right away.',
     textJa:
       '対応キーボードのファームウェアやキーマッピングのプリセットなどが同梱されており、すぐに使い始めることができます。',
     iconSpec: 'fa fa-cube',
@@ -29,7 +29,7 @@ const ideaItems: IdeaItem[] = [
   {
     title: 'Open Source',
     textEn:
-      'Full source code for firmware and utility software is provided under MIT license.',
+      'The source code for firmware and utility software is available under MIT license.',
     textJa:
       'ファームウェアとユーティリティソフトのソースコードがMITライセンスで提供されています。',
     iconSpec: 'fab fa-github-alt',
