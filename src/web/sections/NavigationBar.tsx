@@ -37,7 +37,7 @@ const style = css`
   height: 60px;
   position: sticky;
   top: 0;
-  color: #fff;
+  color: ${colors.white};
   display: flex;
   align-items: center;
   z-index: ${zOrders.topBar};

@@ -6,6 +6,10 @@ export const colors = {
   sectionBg: '#fff',
   sectionBgAlt: '#f3f5f7',
   headerText: '#F80',
+  downloadButton: '#0ae',
+  linkButton: '#CCC',
+  white: '#fff',
+  footer: '#666',
 };
 
 export const zOrders = {

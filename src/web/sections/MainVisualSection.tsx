@@ -1,5 +1,5 @@
 import { css, FC, jsx } from 'qx';
-import { mqLarge } from '~/web/base';
+import { colors, mqLarge } from '~/web/base';
 
 export const MainVisualSection: FC = () => (
   <div css={style}>
@@ -21,7 +21,7 @@ const style = css`
 
   > .catchphrase {
     font-size: 50px;
-    color: #fff;
+    color: ${colors.white};
 
     ${mqLarge} {
       font-size: 70px;

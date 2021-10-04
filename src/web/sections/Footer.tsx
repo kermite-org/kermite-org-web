@@ -1,4 +1,5 @@
 import { css, FC, jsx } from 'qx';
+import { colors } from '~/web/base';
 
 export const Footer: FC = () => (
   <div css={style}>©2021 yahiro, all rights reserved.</div>
@@ -6,8 +7,8 @@ export const Footer: FC = () => (
 
 const style = css`
   height: 60px;
-  background: #666;
-  color: #fff;
+  background: ${colors.footer};
+  color: ${colors.white};
   display: flex;
   justify-content: center;
   align-items: center;

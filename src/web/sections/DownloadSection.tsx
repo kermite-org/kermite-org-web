@@ -1,5 +1,5 @@
 import { css, jsx } from 'qx';
-import { langs, SectionFC } from '~/web/base';
+import { colors, langs, SectionFC } from '~/web/base';
 import { SectionBase } from '~/web/components/atoms';
 
 export const DownloadSection: SectionFC = ({ altBgColor }) => (
@@ -28,8 +28,8 @@ const style = css`
     font-size: 36px;
     display: flex;
     align-items: center;
-    background: #0ae;
-    color: #fff;
+    background: ${colors.downloadButton};
+    color: ${colors.white};
     padding: 20px 30px;
     cursor: pointer;
     border-radius: 10px;
