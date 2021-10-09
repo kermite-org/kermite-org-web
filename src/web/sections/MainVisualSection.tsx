@@ -3,28 +3,37 @@ import { colors, mqLarge } from '~/web/base';
 
 export const MainVisualSection: FC = () => (
   <div css={style}>
-    <div class="catchphrase">
+    <div class="overlay">
       BUILD A KEYBOARD
       <br />
-      REALIZE YOUR <br />
-      IMAGINATION
+      REALIZE YOUR IMAGINATION
     </div>
   </div>
 );
 
+const imageUrls = [
+  'https://i.gyazo.com/f2a8edb5772fa4c674b410b7037b44d2.png',
+  'https://i.gyazo.com/9559700b06b2d620f50ca8c3c00b1e92.png',
+];
+
 const style = css`
   width: 100%;
-  height: 450px;
-  background-image: url('https://i.gyazo.com/4fec8984f10e11f82f1e618979048de8.png');
+  height: 360px;
+  background-image: url(${imageUrls[0]});
+  background-position: center;
   background-size: cover;
-  padding: 20px;
 
-  > .catchphrase {
+  > .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #0002;
     font-size: 50px;
     color: ${colors.white};
+    text-shadow: 0px 0px 10px #0004;
 
     ${mqLarge} {
-      font-size: 70px;
+      font-size: 60px;
     }
   }
 `;
