@@ -11,7 +11,7 @@ export const IntroSection: SectionFC = ({ altBgColor }) => (
   >
     <img
       class="image"
-      src="https://i.gyazo.com/dd06a2d9e1c98815cd69394911a5a29b.png"
+      src="https://i.gyazo.com/d90ded001fb7980396003edcf11829c2.png"
     />
     <div class="text">
       <p qxIf={langs.en}>
