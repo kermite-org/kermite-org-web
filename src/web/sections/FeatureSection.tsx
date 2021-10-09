@@ -31,14 +31,23 @@ const featureItems: FeatureItem[] = [
     textJa:
       '一般的なキーボードの構成をカバーできる、標準ファームウェアが提供されます。GUIで設定を行い、生成されたファームウェアをそのまま書き込めます。',
   },
+  // {
+  //   title: 'Components Supported',
+  //   imageUrl: 'https://i.gyazo.com/8ba330e98c4c0f9551c515fccb4c4711.png',
+  //   textEn:
+  //     'Kermite supports commonly used keyboard components like RGBLED, OLED, Rotary Encoders, Optical Sensors, ...etc',
+  //   textJa:
+  //     '自作キーボードでよく使われる周辺部品に対応しています。NeoPixel RGBLED, I2C OLED, ロータリーエンコーダなどが利用できます。',
+  // },
   {
-    title: 'Components Supported',
-    imageUrl: 'https://i.gyazo.com/8ba330e98c4c0f9551c515fccb4c4711.png',
+    title: 'Realtime Keymapping View',
+    imageUrl: 'https://i.gyazo.com/affa3840ce77c2a9d184407a8a33d500.png',
     textEn:
-      'Kermite supports commonly used keyboard components like RGBLED, OLED, Rotary Encoders, Optical Sensors, ...etc',
+      'In Live mode, the key status is displayed in real time. If you press a layer key, the keymapping is switched according to the current active layers.',
     textJa:
-      '自作キーボードでよく使われる周辺部品に対応しています。NeoPixel RGBLED, I2C OLED, ロータリーエンコーダなどが利用できます。',
+      'キーボードの状態がリアルタイムに画面に表示される、ライブモードを備えています。レイヤキーを押すと、現在有効なレイヤを反映してキーマッピングの表示が切り替わります。',
   },
+
   {
     title: 'Intuitive Layout Editor',
     imageUrl: 'https://gyazo.com/9501d747d2dcceff49a577be4c46c6ce.png',
@@ -48,7 +57,7 @@ const featureItems: FeatureItem[] = [
       '直感的にキー配置を編集できる、レイアウトエディタを搭載しています。キーの配置だけでなく、キーボードの外形も任意の形状で設定できます。',
   },
   {
-    title: 'Share Profiles',
+    title: 'Profile Server',
     imageUrl: 'https://i.gyazo.com/e1f465f7d7b75f89459250ef4794013e.png',
     textEn:
       'Kermite Server provides user-defined keymappings. You can publish your own keymappings and make them available to everyone.',
