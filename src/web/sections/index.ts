@@ -6,3 +6,4 @@ export * from './IdeaSection';
 export * from './IntroSection';
 export * from './MainVisualSection';
 export * from './NavigationBar';
+export * from './UsageSection';

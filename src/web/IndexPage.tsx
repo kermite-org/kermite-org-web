@@ -8,6 +8,7 @@ import {
   IdeaSection,
   Footer,
   DownloadSection,
+  UsageSection,
 } from '~/web/sections';
 
 export const IndexPage: FC = () => (
@@ -19,6 +20,7 @@ export const IndexPage: FC = () => (
     <FeatureSection />
     <DownloadSection altBgColor />
     <AuthorSection />
+    <UsageSection altBgColor />
     <Footer />
   </div>
 );
