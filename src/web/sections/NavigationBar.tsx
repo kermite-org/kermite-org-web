@@ -19,10 +19,10 @@ export const NavigationBar: FC = () => (
     <ul class="link-items">
       {navigationItems.map((item) => (
         <li key={item.targetUrl} class="link-item">
-          <a href={item.targetUrl} qxIf={langs.en} class="link">
+          <a href={item.targetUrl} if={langs.en} class="link">
             {item.textEn}
           </a>
-          <a href={item.targetUrl} qxIf={langs.ja} class="link">
+          <a href={item.targetUrl} if={langs.ja} class="link">
             {item.textJa}
           </a>
         </li>

@@ -14,7 +14,7 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
         data-aspect="0.625"
       ></script>
     </div>
-    <div class="document-link-part" qxIf={false}>
+    <div class="document-link-part" if={false}>
       <a
         href="https://hackmd.io/@kermite/HJCOpTBtY"
         target="_blank"

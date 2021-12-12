@@ -43,10 +43,10 @@ export const IdeaSection: SectionFC = ({ altBgColor }) => (
         <div key={idx} class="item">
           <h3>{item.title}</h3>
           <Icon spec={item.iconSpec} />
-          <div class="text" qxIf={langs.en}>
+          <div class="text" if={langs.en}>
             {item.textEn}
           </div>
-          <div class="text" qxIf={langs.ja}>
+          <div class="text" if={langs.ja}>
             {item.textJa}
           </div>
         </div>

@@ -86,10 +86,10 @@ export const FeatureSection: SectionFC = ({ altBgColor }) => (
           </div>
           <div class="text-part">
             <h3>{item.title}</h3>
-            <div class="text" qxIf={langs.en}>
+            <div class="text" if={langs.en}>
               {item.textEn}
             </div>
-            <div class="text" qxIf={langs.ja}>
+            <div class="text" if={langs.ja}>
               {item.textJa}
             </div>
             {item.link && (
@@ -98,7 +98,7 @@ export const FeatureSection: SectionFC = ({ altBgColor }) => (
                   class="link-button"
                   href={item.link.url}
                   target="_blank"
-                  qxIf={langs.en}
+                  if={langs.en}
                   rel="noreferrer"
                 >
                   {item.link.titleEn}
@@ -107,7 +107,7 @@ export const FeatureSection: SectionFC = ({ altBgColor }) => (
                   class="link-button"
                   href={item.link.url}
                   target="_blank"
-                  qxIf={langs.ja}
+                  if={langs.ja}
                   rel="noreferrer"
                 >
                   {item.link.titleJa}

@@ -5,8 +5,8 @@ import { SectionBase } from '~/web/components/atoms';
 export const DownloadSection: SectionFC = ({ altBgColor }) => (
   <SectionBase id="download" altBgColor={altBgColor} innerCss={style}>
     <div className="environment-row">
-      <h3 qxIf={langs.en}>System Requirements</h3>
-      <h3 qxIf={langs.ja}>動作環境</h3>
+      <h3 if={langs.en}>System Requirements</h3>
+      <h3 if={langs.ja}>動作環境</h3>
       <ul>
         <li>
           <i class="fab fa-windows icon-win" />
@@ -18,10 +18,10 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
         </li>
       </ul>
 
-      <p class="note" qxIf={langs.en}>
+      <p class="note" if={langs.en}>
         Not tested on MacOS 11 and machines with Apple M1 processor. <br />
       </p>
-      <p class="note" qxIf={langs.ja}>
+      <p class="note" if={langs.ja}>
         * 2021年10月現在、MacOS 11およびApple M1プロセッサ
         <br />
         搭載マシンでの動作がまだ検証できていません。
@@ -35,8 +35,8 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
         rel="noreferrer"
       >
         <i class="fab fa-github-square" />
-        <span qxIf={langs.en}>Download from github</span>
-        <span qxIf={langs.ja}>githubでダウンロード</span>
+        <span if={langs.en}>Download from github</span>
+        <span if={langs.ja}>githubでダウンロード</span>
       </a>
     </div>
   </SectionBase>
