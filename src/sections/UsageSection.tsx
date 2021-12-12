@@ -3,7 +3,7 @@ import { SectionBase } from '~/components/atoms';
 import { SectionFC } from '~/base';
 
 export const UsageSection: SectionFC = ({ altBgColor }) => (
-  <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1100}>
+  <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={900}>
     <h2>How To Use</h2>
     <div class="slides-part">
       <script
