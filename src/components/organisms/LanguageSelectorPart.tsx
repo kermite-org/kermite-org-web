@@ -1,5 +1,5 @@
 import { css, FC, jsx } from 'alumina';
-import { langs, reflectValue, setUiLanguage } from '~/web/base';
+import { langs, reflectValue, setUiLanguage } from '~/base';
 
 type Props = {
   className?: string;

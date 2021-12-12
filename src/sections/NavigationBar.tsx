@@ -1,6 +1,6 @@
 import { css, FC, jsx } from 'alumina';
-import { colors, langs, zOrders } from '~/web/base';
-import { LanguageSelectorPart } from '~/web/components/organisms/LanguageSelectorPart';
+import { colors, langs, zOrders } from '~/base';
+import { LanguageSelectorPart } from '~/components/organisms/LanguageSelectorPart';
 
 type NavigationItem = {
   targetUrl: string;

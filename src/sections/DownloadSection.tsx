@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { colors, langs, SectionFC } from '~/web/base';
-import { SectionBase } from '~/web/components/atoms';
+import { colors, langs, SectionFC } from '~/base';
+import { SectionBase } from '~/components/atoms';
 
 export const DownloadSection: SectionFC = ({ altBgColor }) => (
   <SectionBase id="download" altBgColor={altBgColor} innerCss={style}>

@@ -1,6 +1,6 @@
 import { applyGlobalStyle, css, jsx, render } from 'alumina';
-import { IndexPage } from '~/web/IndexPage';
-import { colors } from '~/web/base';
+import { IndexPage } from '~/IndexPage';
+import { colors } from '~/base';
 
 applyGlobalStyle(css`
   * {

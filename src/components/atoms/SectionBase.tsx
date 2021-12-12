@@ -1,5 +1,5 @@
 import { css, FC, jsx, AluminaChildren } from 'alumina';
-import { colors, zOrders } from '~/web/base';
+import { colors, zOrders } from '~/base';
 
 type Props = {
   id?: string;

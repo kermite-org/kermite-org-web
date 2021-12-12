@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { SectionBase } from '~/web/components/atoms';
-import { colors, langs, mqLarge, SectionFC } from '~/web/base';
+import { SectionBase } from '~/components/atoms';
+import { colors, langs, mqLarge, SectionFC } from '~/base';
 
 type FeatureItem = {
   title: string;

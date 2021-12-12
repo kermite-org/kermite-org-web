@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { SectionBase } from '~/web/components/atoms';
-import { mqLarge, SectionFC } from '~/web/base';
+import { SectionBase } from '~/components/atoms';
+import { mqLarge, SectionFC } from '~/base';
 
 type AuthorItem = {
   name: string;

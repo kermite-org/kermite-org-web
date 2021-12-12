@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { SectionBase } from '~/web/components/atoms';
-import { langs, mqLarge, SectionFC } from '~/web/base';
+import { SectionBase } from '~/components/atoms';
+import { langs, mqLarge, SectionFC } from '~/base';
 
 export const IntroSection: SectionFC = ({ altBgColor }) => (
   <SectionBase

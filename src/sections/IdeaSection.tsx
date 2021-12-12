@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { Icon, SectionBase } from '~/web/components/atoms';
-import { langs, mqLarge, SectionFC } from '~/web/base';
+import { Icon, SectionBase } from '~/components/atoms';
+import { langs, mqLarge, SectionFC } from '~/base';
 
 type IdeaItem = {
   title: string;

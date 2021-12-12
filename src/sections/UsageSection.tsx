@@ -1,6 +1,6 @@
 import { css, jsx } from 'alumina';
-import { SectionBase } from '~/web/components/atoms';
-import { SectionFC } from '~/web/base';
+import { SectionBase } from '~/components/atoms';
+import { SectionFC } from '~/base';
 
 export const UsageSection: SectionFC = ({ altBgColor }) => (
   <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={1100}>

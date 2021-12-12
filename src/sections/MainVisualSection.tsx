@@ -1,5 +1,5 @@
 import { css, FC, jsx } from 'alumina';
-import { colors, mqLarge } from '~/web/base';
+import { colors, mqLarge } from '~/base';
 
 export const MainVisualSection: FC = () => (
   <div css={style}>

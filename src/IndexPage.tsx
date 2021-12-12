@@ -9,7 +9,7 @@ import {
   Footer,
   DownloadSection,
   UsageSection,
-} from '~/web/sections';
+} from '~/sections';
 
 export const IndexPage: FC = () => (
   <div>
