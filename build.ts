@@ -33,8 +33,8 @@ function patchOutputIndexHtmlBundleImport(htmlFilPath: string) {
   fs.writeFileSync(htmlFilPath, modText, { encoding: 'utf-8' });
 }
 
-function startWatchPage(folderName: string) {
-  const srcDir = `./src/${folderName}`;
+function startWatchPage() {
+  const srcDir = `./src`;
   const distDir = `./dist`;
   fs.mkdirSync(distDir, { recursive: true });
   fs.copyFileSync(`${srcDir}/index.html`, `${distDir}/index.html`);
@@ -57,8 +57,8 @@ function startWatchPage(folderName: string) {
   launchDebugServer(distDir);
 }
 
-function buildPage(folderName: string) {
-  const srcDir = `./src/${folderName}`;
+function buildPage() {
+  const srcDir = `./src`;
   const distDir = `./dist`;
   fs.mkdirSync(distDir, { recursive: true });
   fs.copyFileSync(`${srcDir}/index.html`, `${distDir}/index.html`);
@@ -82,10 +82,10 @@ function buildPage(folderName: string) {
 
 function entry() {
   if (reqStartWeb) {
-    startWatchPage('web');
+    startWatchPage();
   }
   if (reqBuildWeb) {
-    buildPage('web');
+    buildPage();
   }
 }
 
