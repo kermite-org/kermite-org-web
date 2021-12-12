@@ -1,4 +1,4 @@
-import { css, jsx } from 'qx';
+import { css, jsx } from 'alumina';
 import { SectionBase } from '~/web/components/atoms';
 import { langs, mqLarge, SectionFC } from '~/web/base';
 

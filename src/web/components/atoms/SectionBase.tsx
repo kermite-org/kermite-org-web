@@ -1,10 +1,10 @@
-import { css, FC, jsx, QxChildren } from 'qx';
+import { css, FC, jsx, AluminaChildren } from 'alumina';
 import { colors, zOrders } from '~/web/base';
 
 type Props = {
   id?: string;
   altBgColor?: boolean;
-  children: QxChildren;
+  children: AluminaChildren;
   innerCss?: string;
   contentWidth?: number;
 };

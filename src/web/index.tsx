@@ -1,4 +1,4 @@
-import { applyGlobalStyle, css, jsx, render } from 'qx';
+import { applyGlobalStyle, css, jsx, render } from 'alumina';
 import { IndexPage } from '~/web/IndexPage';
 import { colors } from '~/web/base';
 
