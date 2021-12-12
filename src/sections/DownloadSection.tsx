@@ -14,18 +14,9 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
         </li>
         <li>
           <i class="fab fa-apple icon-mac" />
-          MacOS 10.15 Catalina<span class="asterisk">*</span>
+          macOS 12 Monterey
         </li>
       </ul>
-
-      <p class="note" if={langs.en}>
-        Not tested on MacOS 11 and machines with Apple M1 processor. <br />
-      </p>
-      <p class="note" if={langs.ja}>
-        * 2021年10月現在、MacOS 11およびApple M1プロセッサ
-        <br />
-        搭載マシンでの動作がまだ検証できていません。
-      </p>
     </div>
     <div className="button-row">
       <a
