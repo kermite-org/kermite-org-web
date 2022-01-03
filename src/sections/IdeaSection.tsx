@@ -31,7 +31,7 @@ const ideaItems: IdeaItem[] = [
     textEn:
       'The source code for firmware and utility software is available under MIT license.',
     textJa:
-      'ファームウェアとユーティリティソフトのソースコードがMITライセンスで提供されています。',
+      'ファームウェアとユーティリティソフトウェアのソースコードがMITライセンスで提供されています。',
     iconSpec: 'fab fa-github-alt',
   },
 ];
