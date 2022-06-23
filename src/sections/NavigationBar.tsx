@@ -11,7 +11,7 @@ type NavigationItem = {
 const navigationItems: NavigationItem[] = [
   { targetUrl: '#concept', textEn: 'concept', textJa: '概要' },
   { targetUrl: '#features', textEn: 'features', textJa: '特徴' },
-  { targetUrl: '#download', textEn: 'download', textJa: 'ダウンロード' },
+  { targetUrl: '#download', textEn: 'launch', textJa: '起動' },
 ];
 export const NavigationBar: FC = () => (
   <div css={style}>

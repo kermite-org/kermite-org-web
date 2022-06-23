@@ -9,7 +9,7 @@ export const LanguageSelectorPart: FC<Props> = ({ className }) => {
   return (
     <div css={style} className={className}>
       <select value={langs.current} onChange={reflectValue(setUiLanguage)}>
-        <option value="English">US</option>
+        <option value="English">EN</option>
         <option value="Japanese">JP</option>
       </select>
     </div>

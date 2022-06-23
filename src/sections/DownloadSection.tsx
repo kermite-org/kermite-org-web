@@ -5,29 +5,45 @@ import { SectionBase } from '~/components/atoms';
 export const DownloadSection: SectionFC = ({ altBgColor }) => (
   <SectionBase id="download" altBgColor={altBgColor} innerCss={style}>
     <div className="environment-row">
-      <h3 if={langs.en}>System Requirements</h3>
+      <h3 if={langs.en}>Supported Environments</h3>
       <h3 if={langs.ja}>動作環境</h3>
       <ul>
         <li>
           <i class="fab fa-windows icon-win" />
-          Windows 10
+          <i class="fab fa-apple icon-win" />
+          <i class="fab fa-linux icon-win" />
+          <i class="fab fa-android icon-win" />
         </li>
         <li>
-          <i class="fab fa-apple icon-mac" />
-          macOS 12 Monterey
+          <i class="fab fa-chrome icon-win" />
+          Google Chrome
         </li>
       </ul>
+
+      <div className="texts">
+        <p if={langs.ja}>
+          キーボードはHIDデバイスのためどのOSでも使用できます。
+          <br />
+          ユーティリティソフトはブラウザ(Google Chrome)で動作します。
+        </p>
+        <p if={langs.en}>
+          The keyboard is an HID device and can be used on any OS.
+          <br />
+          The utility software runs in a browser (Google Chrome).
+        </p>
+      </div>
     </div>
+
     <div className="button-row">
       <a
         class="button"
-        href="https://github.com/kermite-org/Kermite/releases"
+        href="https://app.kermite.org"
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fab fa-github-square" />
-        <span if={langs.en}>Download from github</span>
-        <span if={langs.ja}>githubでダウンロード</span>
+        <i class="fa fa-rocket" />
+        <span if={langs.en}>Launch utility software</span>
+        <span if={langs.ja}>ユーティリティソフトを起動</span>
       </a>
     </div>
   </SectionBase>
@@ -41,7 +57,10 @@ const style = css`
   align-items: center;
 
   > .environment-row {
-    font-size: 30px;
+    h3,
+    ul {
+      font-size: 30px;
+    }
 
     > ul {
       margin-top: 20px;
@@ -72,6 +91,11 @@ const style = css`
       > li + li {
         margin-top: 10px;
       }
+    }
+
+    > .texts {
+      font-size: 20px;
+      margin-top: 20px;
     }
 
     > .note {

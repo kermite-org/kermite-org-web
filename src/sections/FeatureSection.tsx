@@ -19,9 +19,9 @@ const featureItems: FeatureItem[] = [
     title: 'MCU Boards Supported',
     imageUrl: 'https://i.gyazo.com/9200650e13090ebb8a5cb33ea85cfd99.png',
     textEn:
-      'It is compatible with AVR and RP2040 microcontroller boards.\nYou can easily design your keyboard with them.',
+      'It is compatible with RP2040 microcontroller boards.\nYou can easily design your keyboard with them.',
     textJa:
-      'AVRとRP2040のマイコンボードに対応しています。これらを使うことで、簡単にハードウェアを構成できます。',
+      'RP2040のマイコンボードに対応しています。これらを使うことで、簡単にハードウェアを構成できます。',
   },
   {
     title: 'Easy Firmware Configuration',
