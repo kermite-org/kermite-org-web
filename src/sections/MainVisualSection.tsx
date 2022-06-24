@@ -8,6 +8,16 @@ export const MainVisualSection: FC = () => (
       <br />
       REALIZE YOUR IMAGINATION
     </div>
+    <div class="badge-base"></div>
+    <div class="badge-icon">
+      <a
+        href="https://github.com/kermite-org/Kermite"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i class="fab fa-github" />
+      </a>
+    </div>
   </div>
 );
 
@@ -22,6 +32,7 @@ const style = css`
   background-image: url(${imageUrls[0]});
   background-position: center;
   background-size: cover;
+  position: relative;
 
   > .overlay {
     width: 100%;
@@ -35,5 +46,24 @@ const style = css`
     ${mqLarge} {
       font-size: 60px;
     }
+  }
+
+  > .badge-base {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: solid 50px #fa0b;
+    border-right: solid 50px #fa0b;
+    border-left: solid 50px transparent;
+    border-bottom: solid 50px transparent;
+  }
+
+  > .badge-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    color: #006;
+    margin: 10px;
   }
 `;
