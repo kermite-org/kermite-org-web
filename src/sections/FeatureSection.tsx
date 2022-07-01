@@ -66,7 +66,7 @@ const featureItems: FeatureItem[] = [
     link: {
       titleEn: 'View user profiles',
       titleJa: 'ユーザの投稿を見る',
-      url: 'https://dev.server.kermite.org',
+      url: 'https://server.kermite.org',
     },
   },
 ];
