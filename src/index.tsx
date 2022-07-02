@@ -40,7 +40,7 @@ applyGlobalStyle(css`
 `);
 
 function start() {
-  console.log(`kermite-org-web 220624`);
+  console.log(`kermite-org-web 220702`);
   render(() => <IndexPage />, document.getElementById('app'));
 }
 
