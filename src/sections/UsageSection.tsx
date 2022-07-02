@@ -8,11 +8,12 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
     <h2 if={langs.ja}>使い方</h2>
     <div class="header-notes">
       <p if={langs.ja}>
-        ※以下のスライドは古いバージョン(デスクトップアプリ)向けの解説で、現在の実装では一部異なるところがあります。
+        ※以下のスライドは古いバージョン(デスクトップアプリ)向けの解説で、現在の実装では一部異なるところがあります。またAVRのサポートが廃止されており、対応MCUはRP2040のみとなっています。
       </p>
       <p if={langs.en}>
         ※The following slides are explanations for older versions (desktop apps)
-        and may differ in some parts.
+        and may differ in some parts. Note that support for AVR has been
+        discontinued.
       </p>
     </div>
     <div class="slides-part">
