@@ -22,7 +22,7 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
 
       <div className="texts">
         <p if={langs.ja}>
-          キーボードはHIDデバイスのためどのOSでも使用できます。
+          キーボードはHIDデバイスとして機能するので、どのOSでも使用できます。
           <br />
           ユーティリティソフトはブラウザ(Google Chrome)で動作します。
         </p>
@@ -42,8 +42,8 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
         rel="noreferrer"
       >
         <i class="fa fa-rocket" />
-        <span if={langs.en}>Launch utility software</span>
-        <span if={langs.ja}>ユーティリティソフトを起動</span>
+        <span if={langs.en}>Launch web app</span>
+        <span if={langs.ja}>Webアプリを起動</span>
       </a>
     </div>
   </SectionBase>
