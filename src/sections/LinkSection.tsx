@@ -73,6 +73,7 @@ const style = css`
         align-items: center;
         gap: 20px;
         font-size: 18px;
+        color: #668;
         line-height: 1.5em;
 
         > .icon-part {
