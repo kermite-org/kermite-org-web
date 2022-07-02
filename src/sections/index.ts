@@ -7,3 +7,4 @@ export * from './IntroSection';
 export * from './MainVisualSection';
 export * from './NavigationBar';
 export * from './UsageSection';
+export * from './LinkSection';
