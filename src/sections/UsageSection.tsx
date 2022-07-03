@@ -57,6 +57,7 @@ const style = css`
   > .header-notes {
     margin-top: 20px;
     font-size: 18px;
+    line-height: 1.5em;
   }
 
   > .slides-part {

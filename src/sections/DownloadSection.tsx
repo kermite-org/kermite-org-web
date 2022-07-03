@@ -9,13 +9,12 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
       <h3 if={langs.ja}>動作環境</h3>
       <ul>
         <li>
-          <i class="fab fa-windows icon-win" />
-          <i class="fab fa-apple icon-win" />
-          <i class="fab fa-linux icon-win" />
-          <i class="fab fa-android icon-win" />
+          <i class="fab fa-windows" />
+          <i class="fab fa-apple" />
+          <i class="fab fa-linux" />
         </li>
         <li>
-          <i class="fab fa-chrome icon-win" />
+          <i class="fab fa-chrome" />
           Google Chrome
         </li>
       </ul>
@@ -24,12 +23,14 @@ export const DownloadSection: SectionFC = ({ altBgColor }) => (
         <p if={langs.ja}>
           キーボードはHIDデバイスとして機能するので、どのOSでも使用できます。
           <br />
-          ユーティリティソフトはブラウザ(Google Chrome)で動作します。
+          ユーティリティソフトはGoogle
+          ChromeなどのWebHIDをサポートしているブラウザで動作します。※iOS/Androidには対応していません。
         </p>
         <p if={langs.en}>
           The keyboard is an HID device and can be used on any OS.
           <br />
-          The utility software runs in a browser (Google Chrome).
+          The utility software runs in browsers that support WebHID. ※iOS and
+          Android are not supported.
         </p>
       </div>
     </div>
@@ -57,6 +58,7 @@ const style = css`
   align-items: center;
 
   > .environment-row {
+    max-width: 700px;
     h3,
     ul {
       font-size: 30px;
@@ -72,19 +74,12 @@ const style = css`
           margin-right: 8px;
           display: inline-flex;
           justify-content: center;
+          font-size: 32px;
         }
 
         > .asterisk {
           font-size: 14px;
           vertical-align: super;
-        }
-
-        > i.icon-win {
-          font-size: 32px;
-        }
-
-        > i.icon-mac {
-          font-size: 40px;
         }
       }
 
@@ -96,6 +91,7 @@ const style = css`
     > .texts {
       font-size: 20px;
       margin-top: 20px;
+      line-height: 1.5em;
     }
 
     > .note {
