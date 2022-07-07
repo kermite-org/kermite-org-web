@@ -62,6 +62,7 @@ function buildPage() {
   const distDir = `./dist`;
   fs.mkdirSync(distDir, { recursive: true });
   fs.copyFileSync(`${srcDir}/index.html`, `${distDir}/index.html`);
+  fs.copyFileSync(`${srcDir}/favicon.ico`, `${distDir}/favicon.ico`);
   patchOutputIndexHtmlBundleImport(`${distDir}/index.html`);
 
   build({

@@ -1,39 +1,67 @@
 <!DOCTYPE html>
 <html>
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <meta charset="utf-8" />
+    <title>Kermite</title>
+    <meta
+      name="description"
+      content="Kermiteは自作キーボードのためのソフトウェアプラットフォームです。"
+    />
+    <meta
+      name="copyright"
+      content="Copyright &copy; 2021 yahiro All Rights Reserved"
+    />
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-  <meta charset="utf-8" />
-  <title>Kermite</title>
-  <meta name='description' content="Kermiteは自作キーボードのためのソフトウェアプラットフォームです。" />
-  <meta name="copyright" content="Copyright &copy; 2021 yahiro All Rights Reserved" />
+    <meta property="og:url" content="https://kermite.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kermite | DIY Keyboard Ecosystem" />
+    <meta property="og:image" content="https://i.imgur.com/DK3Lw9o.png" />
+    <meta
+      property="og:description"
+      content="All-in-one software platform for DIY keyboards."
+    />
+    <meta property="og:site_name" content="kermite.org" />
 
-  <meta property="og:url" content="https://kermite.org" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kermite | DIY Keyboard Ecosystem" />
-  <meta property="og:image" content="https://i.imgur.com/DK3Lw9o.png" />
-  <meta property="og:description" content="All-in-one software platform for DIY keyboards." />
-  <meta property="og:site_name" content="kermite.org" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PG24HYNLSY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PG24HYNLSY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag('config', 'G-PG24HYNLSY');
+    </script>
+  </head>
 
-    gtag('config', 'G-PG24HYNLSY');
-  </script>
-</head>
-
-<body>
-  <div id="app"></div>
-  <script src="./index.js"></script>
-</body>
-
+  <body>
+    <div id="app"></div>
+    <script src="./index.js"></script>
+  </body>
 </html>
