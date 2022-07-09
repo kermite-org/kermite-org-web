@@ -17,7 +17,8 @@ type FeatureItem = {
 const featureItems: FeatureItem[] = [
   {
     title: 'MCU Boards Supported',
-    imageUrl: 'https://i.gyazo.com/9200650e13090ebb8a5cb33ea85cfd99.png',
+    // imageUrl: 'https://i.gyazo.com/9200650e13090ebb8a5cb33ea85cfd99.png',
+    imageUrl: 'https://i.gyazo.com/f465e304407385e78bc56499f398a91b.png',
     textEn:
       'It is compatible with RP2040 microcontroller boards.\nYou can easily design your keyboard with them.',
     textJa:
@@ -25,7 +26,8 @@ const featureItems: FeatureItem[] = [
   },
   {
     title: 'Easy Firmware Configuration',
-    imageUrl: 'https://i.gyazo.com/0e437b6fe6a2850a99f653ca226accc4.png',
+    // imageUrl: 'https://i.gyazo.com/0e437b6fe6a2850a99f653ca226accc4.png',
+    imageUrl: 'https://i.gyazo.com/cee9104c446d350d272862d2efd24f92.png',
     textEn:
       'Standard firmware is provided to cover all common keyboard configurations. It is configured with GUI and generated firmware can be flashed into MCU on the fly.',
     textJa:
