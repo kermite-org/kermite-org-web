@@ -2,7 +2,7 @@ import { css, FC, jsx } from 'alumina';
 import { colors } from '~/base';
 
 export const Footer: FC = () => (
-  <div css={style}>©2021 yahiro, all rights reserved.</div>
+  <div css={style}>©2021-2022 yahiro, all rights reserved.</div>
 );
 
 const style = css`
