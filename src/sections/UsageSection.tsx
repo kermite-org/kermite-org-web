@@ -11,14 +11,14 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
         async
         class="docswell-embed"
         src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js"
-        data-src="https://www.docswell.com/slide/K28RGK/embed"
+        data-src="https://www.docswell.com/slide/5YEE9Z/embed"
         data-aspect="0.625"
       />
       <script
         async
         class="docswell-embed"
         src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js"
-        data-src="https://www.docswell.com/slide/5YEE9Z/embed"
+        data-src="https://www.docswell.com/slide/K28RGK/embed"
         data-aspect="0.625"
       />
     </div>
