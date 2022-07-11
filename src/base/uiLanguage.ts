@@ -1,7 +1,17 @@
 type UiLanguage = 'English' | 'Japanese';
 
-const uiLanguage: UiLanguage =
-  localStorage.getItem('uiLanguage') === 'Japanese' ? 'Japanese' : 'English';
+function loadUiLanguage(): UiLanguage {
+  let isJapanese = false;
+  const lang = localStorage.getItem('uiLanguage');
+  if (lang) {
+    isJapanese = lang === 'Japanese';
+  } else {
+    isJapanese = navigator.language === 'ja';
+  }
+  return isJapanese ? 'Japanese' : 'English';
+}
+
+const uiLanguage: UiLanguage = loadUiLanguage();
 
 export const langs = {
   get current(): UiLanguage {
