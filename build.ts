@@ -11,16 +11,18 @@ const [opts] = cliopts.parse(
 const reqStartWeb = opts['start-web'];
 const reqBuildWeb = opts['build-web'];
 
+const port = 3000;
+
 function launchDebugServer(distDir: string) {
   servor({
     root: distDir,
     fallback: 'index.html',
     reload: true,
     browse: true,
-    port: 3000,
+    port,
   });
-  open('http://localhost:3000');
-  console.log('server listening on http://localhost:3000');
+  open(`http://localhost:${port}`);
+  console.log(`server listening on http://localhost:${port}`);
 }
 
 function patchOutputIndexHtmlBundleImport(htmlFilPath: string) {
