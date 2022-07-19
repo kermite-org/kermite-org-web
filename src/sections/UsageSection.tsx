@@ -6,7 +6,7 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
   <SectionBase innerCss={style} altBgColor={altBgColor} contentWidth={900}>
     <h2 if={langs.en}>How To Use</h2>
     <h2 if={langs.ja}>使い方</h2>
-    <div class="slides-part">
+    <div class="slides-part" if={langs.ja}>
       <script
         async
         class="docswell-embed"
@@ -22,13 +22,31 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
         data-aspect="0.625"
       />
     </div>
-    <div class="document-link-part" if={false}>
+
+    <div class="slides-part" if={langs.en}>
+      <script
+        async
+        class="docswell-embed"
+        src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js"
+        data-src="https://www.docswell.com/slide/ZG4DP5/embed"
+        data-aspect="0.625"
+      ></script>
+      <script
+        async
+        class="docswell-embed"
+        src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js"
+        data-src="https://www.docswell.com/slide/59D3PK/embed"
+        data-aspect="0.625"
+      ></script>
+    </div>
+
+    <div class="document-link-part" if={langs.ja}>
       <a
-        href="https://hackmd.io/@kermite/HJCOpTBtY"
+        href="https://miro.com/app/board/uXjVOmWCCvE=/"
         target="_blank"
         rel="noreferrer"
       >
-        ドキュメント (HackMD)
+        ユーザーガイド (Miro)
       </a>
     </div>
   </SectionBase>
