@@ -41,12 +41,8 @@ export const UsageSection: SectionFC = ({ altBgColor }) => (
     </div>
 
     <div class="document-link-part" if={langs.ja}>
-      <a
-        href="https://miro.com/app/board/uXjVOmWCCvE=/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        ユーザーガイド (Miro)
+      <a href="https://docs.kermite.org" target="_blank" rel="noreferrer">
+        ユーザーガイド
       </a>
     </div>
   </SectionBase>
