@@ -12,7 +12,7 @@ const authorItems: AuthorItem[] = [
   {
     name: 'yahiro',
     text: 'Core developer, firmware and utility software',
-    avatarImageUrl: 'https://i.gyazo.com/16321689cfd7d0a0d89744ab058ef002.png',
+    avatarImageUrl: 'https://i.imgur.com/QpsGlWq.png',
   },
   {
     name: 'reo',
